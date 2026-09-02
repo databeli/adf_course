@@ -1,0 +1,41 @@
+{
+	"name": "PL_DEMO",
+	"properties": {
+		"activities": [
+			{
+				"name": "Read__Customer_table",
+				"description": "reading customer table",
+				"type": "Lookup",
+				"dependsOn": [],
+				"policy": {
+					"timeout": "0.12:00:00",
+					"retry": 0,
+					"retryIntervalInSeconds": 30,
+					"secureOutput": false,
+					"secureInput": false
+				},
+				"userProperties": [],
+				"typeProperties": {
+					"source": {
+						"type": "AzureSqlSource",
+						"sqlReaderQuery": "select * from dbo.customers where customerid > 2",
+						"queryTimeout": "02:00:00",
+						"partitionOption": "None"
+					},
+					"dataset": {
+						"referenceName": "DS_SQL_SERVER",
+						"type": "DatasetReference",
+						"parameters": {
+							"schema": "dfg",
+							"table_name": "sfdgfg"
+						}
+					},
+					"firstRowOnly": false
+				}
+			}
+		],
+		"annotations": [],
+		"lastPublishTime": "2026-08-27T11:20:15Z"
+	},
+	"type": "Microsoft.DataFactory/factories/pipelines"
+}

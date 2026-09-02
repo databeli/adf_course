@@ -1,0 +1,11 @@
+{
+	"name": "LS_ADLS",
+	"type": "Microsoft.DataFactory/factories/linkedservices",
+	"properties": {
+		"annotations": [],
+		"type": "AzureBlobFS",
+		"typeProperties": {
+			"url": "https://demodatabeliadls.dfs.core.windows.net/"
+		}
+	}
+}

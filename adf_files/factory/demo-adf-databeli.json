@@ -1,0 +1,21 @@
+{
+	"name": "demo-adf-databeli",
+	"properties": {
+		"globalParameters": {
+			"email_recepient": {
+				"type": "string",
+				"value": "databeli14@gmail.com"
+			}
+		},
+		"trustModeClaimForMi": {
+			"value": "Disabled",
+			"editable": true
+		}
+	},
+	"location": "centralindia",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "d71eaa2f-7889-429b-9cee-c425dcfe1813",
+		"tenantId": "247c44dc-e71a-488b-bc72-186c3a99231c"
+	}
+}
